@@ -6,62 +6,79 @@
 
 body{
     font-family:Arial, Helvetica, sans-serif;
-    background:#f8f8f8;
+    background:#f5f5f5;
     color:#333;
 }
 
 .container{
     width:90%;
-    max-width:1000px;
-    margin:60px auto;
+    max-width:1100px;
+    margin:70px auto;
 }
 
 h1{
     text-align:center;
+    font-size:42px;
     margin-bottom:10px;
-    font-size:36px;
+    letter-spacing:2px;
 }
 
 .subtitle{
     text-align:center;
     color:#777;
-    margin-bottom:40px;
+    margin-bottom:50px;
 }
 
 .contact-box{
     display:flex;
-    gap:40px;
     background:white;
-    padding:40px;
-    border-radius:10px;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
 }
 
 .contact-info{
     width:35%;
+    background:#1f1f1f;
+    color:white;
+    padding:45px 35px;
 }
 
 .contact-info h2{
-    margin-bottom:20px;
+    margin-bottom:25px;
+    font-size:28px;
 }
 
 .contact-info p{
-    margin-bottom:15px;
-    line-height:1.6;
+    margin-bottom:18px;
+    line-height:1.8;
+    color:#dddddd;
 }
 
 .contact-form{
     width:65%;
+    padding:45px;
     display:flex;
     flex-direction:column;
 }
 
 .contact-form input,
 .contact-form textarea{
-    padding:12px;
-    margin-bottom:15px;
-    border:1px solid #ddd;
-    border-radius:5px;
+    width:100%;
+    padding:15px;
+    margin-bottom:20px;
+    border:none;
+    border-bottom:2px solid #ddd;
+    background:#fafafa;
     font-size:16px;
+    transition:0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+    outline:none;
+    border-bottom:2px solid black;
+    background:white;
 }
 
 .contact-form textarea{
@@ -69,17 +86,20 @@ h1{
 }
 
 button{
+    width:180px;
+    padding:15px;
     background:black;
     color:white;
-    padding:12px;
     border:none;
-    border-radius:5px;
-    cursor:pointer;
+    border-radius:30px;
     font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
 }
 
 button:hover{
-    background:#444;
+    background:#555;
+    transform:translateY(-3px);
 }
 
 @media(max-width:768px){
@@ -90,6 +110,14 @@ button:hover{
 
     .contact-info,
     .contact-form{
+        width:100%;
+    }
+
+    .contact-form{
+        padding:35px;
+    }
+
+    button{
         width:100%;
     }
 
