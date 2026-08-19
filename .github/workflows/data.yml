@@ -14,7 +14,7 @@ permissions:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-   
+    
     steps:
       # Step A: Get the code
       - name: Checkout Code
@@ -28,17 +28,17 @@ jobs:
 
       # Step C: THE GATEKEEPER - Test the HTML syntax
       - name: Check HTML Syntax
-        run: npx htmlhint "**/*.html"
+        run: npx htmlhint "**/*.html" 
 
       # Step D: Package the files for deployment
       - name: Setup Pages
         uses: actions/configure-pages@v4
-     
+      
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: '.'
-         
+          
       # Step E: Deploy to the live web
       - name: Deploy to GitHub Pages
         id: deployment
