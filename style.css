@@ -1,0 +1,341 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  color: #2c2c2c;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 60px;
+  background-color: #2c2c2c;
+  color: #ffffff;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 36px;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: #cfcfcf;
+  text-decoration: none;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.logo {
+  width: 38px;
+  height: 38px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+/* Hero */
+.hero {
+  background-color: #2c2c2c;
+  color: #fff;
+  text-align: center;
+  padding: 120px 20px 140px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: 300;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+.hero p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #cfcfcf;
+  max-width: 440px;
+  margin: 0 auto 34px;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #2c2c2c;
+  padding: 14px 32px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.btn:hover {
+  background-color: #d8d3cb;
+}
+
+.btnn {
+  display: inline-block;
+  border: 1px solid #2c2c2c;
+  color: #2c2c2c;
+  padding: 13px 30px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.btnn:hover {
+  background-color: #2c2c2c;
+  color: #ffffff;
+}
+
+/* Section heading */
+.sec-heading {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding-top: 90px;
+  margin-bottom: 50px;
+}
+
+/* Features grid */
+.features {
+  padding-bottom: 90px;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  padding: 0 30px;
+}
+
+.feature {
+  flex: 1;
+  min-width: 220px;
+  max-width: 280px;
+  text-align: center;
+  padding: 30px 20px;
+  background-color: #fff;
+  border-radius: 6px;
+}
+
+.feature-icon {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin: 0 auto 16px;
+  border: 1px solid #2c2c2c;
+  border-radius: 50%;
+  font-size: 12px;
+  color: #777;
+}
+
+.feature h3 {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #555;
+}
+
+/* Showcase */
+.showcase {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #ece9e4;
+}
+
+.showcase .image {
+  flex: 1;
+  min-width: 300px;
+  min-height: 360px;
+  background-color: #d8d3cb;
+}
+
+.showcase .text {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px;
+}
+
+.tag {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #999;
+  margin-bottom: 12px;
+}
+
+.showcase .text h2 {
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+
+.showcase .text p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 28px;
+  max-width: 360px;
+}
+
+/* Testimonial */
+.testimonial {
+  text-align: center;
+  max-width: 620px;
+  margin: 0 auto;
+  padding: 100px 30px;
+}
+
+.testimonial .quote {
+  font-size: 21px;
+  font-weight: 300;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.testimonial .name {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #777;
+}
+.start {
+  background-color: #2c2c2c;
+  color: #ffffff;
+  text-align: center;
+  padding: 90px 30px;
+}
+
+.start h2 {
+  font-size: 26px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 30px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #999;
+  text-transform: uppercase;
+}
+
+/* Stats strip */
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.stat {
+  flex: 1;
+  min-width: 150px;
+  text-align: center;
+  padding: 40px 20px;
+  border-right: 1px solid #eee;
+}
+
+.stat:last-child {
+  border-right: none;
+}
+
+.stat-num {
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 6px;
+}
+
+.stat-label {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #777;
+}
+
+/* Story */
+.story {
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 90px;
+}
+
+.story p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #555;
+  padding: 0 30px;
+}
+
+/* Team */
+.team {
+  background-color: #ece9e4;
+  padding-bottom: 90px;
+}
+
+.team-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+  padding: 0 30px;
+}
+
+.member {
+  min-width: 160px;
+  text-align: center;
+}
+
+.member-photo {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: #2c2c2c;
+  margin: 0 auto 16px;
+}
+
+.member h3 {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 4px;
+}
+
+.member p {
+  font-size: 13px;
+  color: #777;
+}
+
